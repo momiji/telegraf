@@ -332,7 +332,9 @@ func main() {
 				log.Fatal("E! " + err.Error())
 			}
 		} else {
-			err = s.Run()
+			// FIX
+			// err = s.Run()
+			prg.run()
 			if err != nil {
 				log.Println("E! " + err.Error())
 			}
